@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Crear";
+}
+
+<h1>Crear</h1>
+
+<form action="/Persona/crear" method="post">
+    Tipo <select name="Nombre">Nombre</option>
+        <option value="Apellido">APellido</option>
+        <option value="FechaNac">FechaNac</option>
+    </select>
+
+    Nombre <input name="Name" />
+    @Html.ValidationMessage("Name")
+
+    
+
+</form>
